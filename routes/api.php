@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('numbers', [\App\Http\Controllers\NumberController::class, 'generate'])->name('numbers.store');
+Route::get('numbers/{id}', [\App\Http\Controllers\NumberController::class, 'retrieve'])->name('numbers.show');
